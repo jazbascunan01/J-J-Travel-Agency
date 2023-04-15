@@ -1,0 +1,262 @@
+<article class="contenido">
+    <h2>Solicitá turno y juntos planeamos tu viaje!</h2>
+    <article class="contenedor" id="turnos">
+        <form action="" id="form">
+            <section class="datos_form">
+                <h3 class="titulo_datos_personales">Datos Pesonales</h3>
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" value="" placeholder="Ingrese nombre..." required />
+                <label for="apellido">Apellido</label>
+                <input type="text" name="apellido" value="" placeholder="Ingrese apellido..." required />
+                <label for="dni">Nro de Documento</label>
+                <input type="text" name="dni" value="" placeholder="Ingrese documento..." required />
+                <label for="cuil">Cuil</label>
+                <input type="text" name="cuil" value="" placeholder="Ingrese cuil..." required />
+                <label for="genero">Género</label>
+                <select name="genero" aria-placeholder="Seleccione género" required>
+                    <option value="Seleccione género">Seleccione género</option>
+                    <option value="femenino">Femenino</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="otro">Otro</option>
+                </select>
+                <label for="fdn">Fecha de nacimiento</label>
+                <input type="date" name="fecha" value="2022-09-22" min="1900-01-01" max="2004-12-31" required>
+            </section>
+            <section class="datos_form">
+                <h3>Datos del viaje</h3>
+                <label for="fdv">Fecha del viaje</label>
+                <input type="datetime-local" name="fecha_y_hora" required>
+                <label for="tipo">Tipo de viaje</label>
+                <select name="tipo_de_viaje" aria-placeholder="Seleccione tipo de viaje" required>
+                    <option value="Seleccione tipo de viaje">Seleccione tipo de viaje</option>
+                    <option value="sol_y_playa">Turismo de sol y playa</option>
+                    <option value="gastronómico">Turismo gastronómico</option>
+                    <option value="rural">Turismo rural</option>
+                    <option value="naturaleza">Turismo de naturaleza</option>
+                    <option value="familiar">Turismo familiar</option>
+                </select>
+                <label for="destino">Destino</label>
+                <select name="destino" aria-placeholder="Seleccione destino" required>
+                    <option value="Seleccione destino">Seleccione destino</option>
+                    <option>Afganistan</option>
+                    <option>Albania</option>
+                    <option>Alemania</option>
+                    <option>Andorra</option>
+                    <option>Angola</option>
+                    <option>Antigua y Barbuda</option>
+                    <option>Arabia Saudita</option>
+                    <option>Argelia</option>
+                    <option>Argentina</option>
+                    <option>Armenia</option>
+                    <option>Australia</option>
+                    <option>Austria</option>
+                    <option>Azerbaiyán</option>
+                    <option>Bahamas</option>
+                    <option>Bangladés</option>
+                    <option>Barbados</option>
+                    <option>Baréin</option>
+                    <option>Bélgica</option>
+                    <option>Belice</option>
+                    <option>Bielorrusia</option>
+                    <option>Benín</option>
+                    <option>Birmania</option>
+                    <option>Bolivia</option>
+                    <option>Bosnia-Herzegovina</option>
+                    <option>Botsuana</option>
+                    <option>Brasil</option>
+                    <option>Brunei</option>
+                    <option>Bulgaria</option>
+                    <option>Burkina Faso</option>
+                    <option>Burundi</option>
+                    <option>Bután</option>
+                    <option>Cabo Verde</option> 
+                    <option>Camboya</option> 
+                    <option>Camerún</option> 
+                    <option>Canadá</option> 
+                    <option>Catar</option> 
+                    <option>Chad</option> 
+                    <option>Chile</option> 
+                    <option>China</option> 
+                    <option>Chipre</option> 
+                    <option>Colombia</option> 
+                    <option>Comoras</option> 
+                    <option>Congo</option> 
+                    <option>Corea del Norte</option> 
+                    <option>Corea del Sur</option> 
+                    <option>Costa de Marfil</option> 
+                    <option>Costa Rica</option> 
+                    <option>Croacia</option> 
+                    <option>Cuba</option> 
+                    <option>Dinamarca</option> 
+                    <option>Dominica</option> 
+                    <option>Ecuador</option> 
+                    <option>Egipto</option> 
+                    <option>El Salvador</option> 
+                    <option>Emiratos Árabes</option> 
+                    <option>Eritrea</option> 
+                    <option>Eslovaquia</option> 
+                    <option>Eslovenia</option> 
+                    <option>España</option> 
+                    <option>Estados Unidos</option> 
+                    <option>Estonia</option> 
+                    <option>Etiopía</option> 
+                    <option>Filipinas</option> 
+                    <option>Finlandia</option> 
+                    <option>Fiyi</option> 
+                    <option>Francia</option> 
+                    <option>Gabón</option> 
+                    <option>Gambia</option> 
+                    <option>Georgia</option> 
+                    <option>Ghana</option> 
+                    <option>Granada</option> 
+                    <option>Grecia</option> 
+                    <option>Guatemala</option> 
+                    <option>Guinea</option> 
+                    <option>Guyana</option> 
+                    <option>Haití</option>
+                    <option>Honduras</option> 
+                    <option>Hungría</option> 
+                    <option>India</option> 
+                    <option>Indonesia</option> 
+                    <option>Irak</option> 
+                    <option>Irán</option> 
+                    <option>Irlanda</option> 
+                    <option>Islandia</option> 
+                    <option>Israel</option> 
+                    <option>Italia</option> 
+                    <option>Jamaica</option> 
+                    <option>Japón</option> 
+                    <option>Jordania</option> 
+                    <option>Kazajistán</option> 
+                    <option>Kenia</option> 
+                    <option>Kirguistán</option> 
+                    <option>Kiribati</option> 
+                    <option>Kuwait</option> 
+                    <option>Laos</option> 
+                    <option>Lesoto</option> 
+                    <option>Letonia</option> 
+                    <option>Líbano</option> 
+                    <option>Liberia</option> 
+                    <option>Libia</option> 
+                    <option>Liechtenstein</option> 
+                    <option>Lituania</option> 
+                    <option>Luxemburgo</option> 
+                    <option>Macedonia</option> 
+                    <option>Madagascar</option> 
+                    <option>Malasia</option> 
+                    <option>Malaui</option> 
+                    <option>Maldivas</option> 
+                    <option>Malí</option> 
+                    <option>Malta</option> 
+                    <option>Marruecos</option> 
+                    <option>Mauricio</option> 
+                    <option>Mauritania</option> 
+                    <option>México</option> 
+                    <option>Micronesia</option> 
+                    <option>Moldavia</option> 
+                    <option>Mónaco</option> 
+                    <option>Mongolia</option> 
+                    <option>Montenegro</option> 
+                    <option>Mozambique</option> 
+                    <option>Namibia</option> 
+                    <option>Nauru</option> 
+                    <option>Nepal</option> 
+                    <option>Nicaragua</option>         
+                    <option>Níger</option> 
+                    <option>Nigeria</option> 
+                    <option>Noruega</option> 
+                    <option>Nueva Zelanda</option> 
+                    <option>Omán</option> 
+                    <option>Países Bajos</option> 
+                    <option>Pakistán</option> 
+                    <option>Palaos</option> 
+                    <option>Palestina</option> 
+                    <option>Panamá</option> 
+                    <option>Paraguay</option> 
+                    <option>Perú</option> 
+                    <option>Polonia</option> 
+                    <option>Portugal</option> 
+                    <option>Reino Unido</option> 
+                    <option>Ruanda</option> 
+                    <option>Rumania</option> 
+                    <option>Rusia</option> 
+                    <option>Samoa</option> 
+                    <option>San Cristóbal</option> 
+                    <option>San Marino</option> 
+                    <option>Santa Lucía</option> 
+                    <option>Santo Tomé</option> 
+                    <option>Senegal</option> 
+                    <option>Serbia</option> 
+                    <option>Seychelles</option> 
+                    <option>Sierra Leona</option> 
+                    <option>Singapur</option> 
+                    <option>Siria</option> 
+                    <option>Somalia</option>             
+                    <option>Sri Lanka</option> 
+                    <option>Sudáfrica</option> 
+                    <option>Sudán</option> 
+                    <option>Suecia</option> 
+                    <option>Suiza</option> 
+                    <option>Surinam</option> 
+                    <option>Tailandia</option> 
+                    <option>Tanzania</option> 
+                    <option>Tayikistán</option> 
+                    <option>Timor Oriental</option> 
+                    <option>Togo</option> 
+                    <option>Tonga</option> 
+                    <option>Trinidad y Tobago</option> 
+                    <option>Túnez</option> 
+                    <option>Turkmenistán</option> 
+                    <option>Turquía</option> 
+                    <option>Tuvalu</option> 
+                    <option>Ucrania</option> 
+                    <option>Uganda</option> 
+                    <option>Uruguay</option> 
+                    <option>Uzbekistán</option> 
+                    <option>Vanuatu</option> 
+                    <option>Ciudad del Vaticano</option> 
+                    <option>Venezuela</option> 
+                    <option>Vietnam</option> 
+                    <option>Yemen</option> 
+                    <option>Yibuti</option> 
+                    <option>Zambia</option> 
+                    <option>Zimbabue</option> 
+                </select>
+            </section>
+            <section class="datos_form">
+                <h3>Datos de contacto</h3>
+                <label for="nrocelular">Número de celular</label>
+                <input type="text" name="celular" value="" placeholder="Ingrese número de celular..." required />
+                <label for="mail">Correo electrónico</label>
+                <input type="email" name="email" placeholder="Ingrese su e-mail" required>
+            </section>
+            <section class="datos_form">
+                <label for="transporte">¿Cómo preferís moverte en el destino?</label>
+                <div class="radio">
+                    <div class="contenedor_opcion">
+                        <input type="radio" name="transporte" value="alquiler de auto" />
+                        <label class="alquiler_auto" for="alquiler_de_auto">Alquiler de auto</label>
+                    </div>
+                    <div class="contenedor_opcion">
+                        <input type="radio" name="transporte" value="colectivo" />
+                        <label class="colectivo" for="colectivo">Colectivo</label>
+                    </div>
+                    <div class="contenedor_opcion">
+                        <input type="radio" name="transporte" value="otro" />
+                        <label class="otro" for="otro"> Otro</label>
+                    </div>
+    
+                </div>
+            </section>
+            <section>
+                <h3>Complete el código para comprobar que no es un robot</h3>
+                <section class="contenedor_captcha">
+                    <label for="captcha_origen" id="captcha_origen"></label>
+                    <input type="text" id="captcha" name="captcha" placeholder="Ingrese código" value="" required>
+                    <label id="Mensajes" for="Mensajes"></label>
+                    <button id="botonEnviar">Enviar</button>
+                </section>
+            </section>
+        </form>
+    </article>
+</article>

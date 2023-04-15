@@ -1,0 +1,49 @@
+<article class="contenido">
+    <!--gran contenedor para  todo el contenido de la pagina web-->
+    <article class="primer_imagen_de_fondo" id="administrador">
+        <h2 class="admin">Administración</h2>
+        <!--fondo de administracion-->
+    </article>
+    <form id="form_filtro">
+        <label>Filtrar</label>
+        <select name="filtro" id="filtro">
+            <option value="Todos">Todos</option>
+            <option value="menos_70000">Menos de $70000</option>
+            <option value="mas_70000">Más de $70000</option>
+        </select>
+    </form>
+    <article class="contenedor_tabla_form">
+
+        <article class="tabla">
+            <table id="ofertas">
+                <!--Tabla vacía para ser llenada dinámicamente en el js-->
+
+            </table>
+        </article>
+        <form id="ant_sig">
+            <button id="paginado_anterior">Anterior</button>
+            <button id="paginado_siguiente">Siguiente</button>
+        </form>
+        <form id="anter_sig">
+            <button id="pag_anterior">Anterior</button>
+            <button id="pag_siguiente">Siguiente</button>
+        </form>
+        <article class="contenedor">
+            <form action="" id="form_cargar_datos">
+                <label id="label_destino" for="destino">Destino</label>
+                <input id="input_destino" type="text" name="destino" value="" placeholder="Ingrese destino..." required />
+                <label id="label_descripcion" for="descripcion">Descripción</label>
+                <textarea id="descripcion" name="descripcion" value="" placeholder="Ingrese descripcion..." rows="6"
+                    cols="55" required></textarea>
+                <label id="label_precio" for="precio">Precio</label>
+                <input id="precio" type="number" name="precio" value="" placeholder="Ingrese precio..." required />
+                <button id="botonEnviar">Agregar</button>
+                <button type="button" id="botonGuardar">Guardar</button>
+                <div class="botones">
+                    <button id="boton_eliminar" type="button"> Eliminar</button>
+                    <button id="boton_crear_de_a_tres" type="submit">Agregar X3</button>
+                </div>
+            </form>
+        </article>
+    </article>
+</article>

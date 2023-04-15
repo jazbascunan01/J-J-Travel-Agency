@@ -1,0 +1,1889 @@
+@font-face {
+    /*Permite definir una tipografía e importarla para su uso en la página web.*/
+    font-family: matterland;
+    src: url(../font/Matterland.ttf);
+}
+
+@font-face {
+    /*Permite definir una tipografía e importarla para su uso en la página web.*/
+    font-family: stereofidelic;
+    src: url(../font/stereofidelic.ttf);
+}
+
+@font-face {
+    /*Permite definir una tipografía e importarla para su uso en la página web.*/
+    font-family: Rivera_PERSONAL_USE_ONLY-Regular;
+    src: url(../font/Rivera_PERSONAL_USE_ONLY-Regular.otf);
+}
+
+@font-face {
+    font-family: MAROLA;
+    src: url(../font/MAROLA__.TTF);
+}
+
+body {
+    background-color: #2ead89;
+    color: white;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+
+/*---------------------------------------------------------------------
+---------------------------ENCABEZADO----------------------------------
+---------------------------------------------------------------------*/
+h1 {
+    font-size: x-large;
+    margin: 0px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    /*Alinear verticalmente*/
+    font-weight: normal;
+    font-family: matterland;
+    color: black;
+    -webkit-text-stroke: 0.1px white;
+}
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+}
+
+h2.admin {
+    color: black;
+}
+
+h3 {
+    margin: 3%;
+    font-size: large;
+    text-align: center;
+}
+
+h4 {
+    font-size: 20px;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    /*Margen inferior*/
+    text-align: center;
+}
+
+.contenedor div h4 {
+    font-size: 18px;
+    margin: 0;
+}
+
+h5 {
+    font-size: xx-small;
+    margin: 2px;
+}
+
+p {
+    text-align: justify;
+    margin: 5%;
+
+}
+
+header {
+    display: flex;
+    width: 100%;
+    height: 90px;
+    margin: 0px;
+    background-image: url("../images/0001coverblog.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    justify-content: center;
+    /*Alinear horizontalmente*/
+    align-items: stretch;
+    /*Alinear verticalmente*/
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    /*Alinear verticalmente*/
+    justify-content: center;
+    /*Alinear horizontalmente*/
+    height: 100%;
+    margin: 0;
+}
+
+.logotipo {
+    height: 60%;
+}
+
+.navigation {
+    background: black;
+    border-bottom: 5px solid #6ca9d3;
+    /*Borde inferior*/
+    padding-left: 0;
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+    /*Sin subrayado*/
+}
+
+.item:hover {
+    /*Al pasar el cursor por encima*/
+    background: #6ca9d3;
+    font-size: 130%;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1.5s;
+}
+
+.selected {
+    background: #6ca9d3;
+}
+
+span.slogan {
+    list-style: none;
+    padding: 17px;
+    text-transform: uppercase;
+    /*Convertir en mayúscula*/
+    background-color: #00192a;
+    width: 100%;
+    font-size: 10px;
+    text-align: center;
+}
+
+.menu_logo {
+    width: 17px;
+}
+
+.btn_menu {
+    color: white;
+    padding: 15px;
+    align-items: center;
+    display: flex;
+}
+
+.btn_menu a {
+    color: white;
+    text-decoration: none;
+    /*Sin subrayado*/
+    display: flex;
+    padding: 0px 2px 0px 2px;
+    cursor: pointer;
+    /*cursor tipo mano*/
+    font-size: 10px;
+}
+
+.btn_menu a:hover {
+    font-size: 15px;
+}
+
+.item a:hover {
+    cursor: pointer;
+}
+
+.menu_logo:hover {
+    width: 20px;
+
+}
+
+.menu_desplegable {
+    border-bottom: 5px solid #6ca9d3;
+    width: 100%;
+    display: flex;
+    background-color: black;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+
+li.slogan {
+    display: none;
+}
+
+/*Todos los ul con clase navigation*/
+ul.navigation {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: none;
+    flex-direction: column;
+}
+
+/* si tiene tambien la clase show */
+ul.navigation.show {
+    display: flex;
+}
+
+ul.navigation li {
+    list-style: none;
+    margin: 0px 0px;
+    padding: 15px 20px;
+    text-transform: uppercase;
+}
+
+ul.navigation li.item {
+    display: flex;
+    align-items: center;
+}
+
+ul.navigation li a {
+    text-decoration: none;
+    color: white;
+}
+
+.logo_nav {
+    width: 25px;
+    padding-right: 7px;
+    padding-bottom: 7px;
+}
+
+/*---------------------------------------------------------------------
+----------------------------CONTENIDO----------------------------------
+---------------------------------------------------------------------*/
+.contenido {
+    width: 100%;
+    height: 100%;
+}
+
+.primer_imagen_de_fondo {
+    /*Pagina HOME*/
+    background-image: url(../images/paisajes-de-Canada.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    /*Alinear horizontalmente*/
+    align-items: center;
+    /*Alinear verticalmente*/
+    width: 100%;
+    height: 230px;
+    margin: 0;
+}
+
+.primer_imagen_de_fondo#nosotros {
+    /*Página NOSOTROS*/
+    background-image: url(../images/19811_portada_facebook_franquicias.png);
+    height: 190px;
+}
+
+.primer_imagen_de_fondo#nosotros h2 {
+    /*Página NOSOTROS*/
+    color: black;
+}
+
+.primer_imagen_de_fondo#ofer {
+    /*Página OFERTAS*/
+    background-image: url(../images/8-spiagge-mauritius-694x390.jpg.image.694.390.low.jpg);
+    height: 230px;
+}
+
+.primer_imagen_de_fondo#administrador {
+    /*Página ADMINISTRADOR*/
+    background-image: url(../images/administracion.jpg);
+    height: 230px;
+}
+
+.primer_imagen_de_fondo#ofer h2 {
+    /*Página OFERTAS*/
+    -webkit-text-stroke: 0.3px #d6ccf2;
+    color: #000136;
+    font-weight: bolder;
+    font-size: 37px;
+}
+
+.primer_imagen_de_fondo#contactos {
+    /*Página CONTACTO*/
+    background-image: url(../images/contacto-fondo-300x216.jpg);
+    height: 230px;
+    flex-direction: column;
+}
+
+.primer_imagen_de_fondo#contactos h2 {
+    color: black;
+}
+
+.titulo_corto {
+    /*h3 de la pagina HOME*/
+    font-size: 22px;
+    margin: 3%;
+    font-family: stereofidelic;
+    font-weight: 500;
+    /*Grosor de la fuente*/
+}
+
+.titulo_largo {
+    /*h3 de la pagina HOME*/
+    font-size: 20px;
+    margin: 5%;
+    font-family: Rivera_PERSONAL_USE_ONLY-Regular;
+    font-weight: 600;
+    /*Grosor de la fuente*/
+    text-align: justify;
+}
+
+figure {
+    margin: 0;
+}
+
+.image {
+    /*figure del HOME*/
+    width: 70%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imag {
+    /*img del HOME*/
+    width: 100%;
+}
+
+figure.contenedor_fig .anterior,
+/*Anterior y siguiente de la galería*/
+figure.contenedor_fig .siguiente {
+    /*de imágenes del HOME*/
+    width: 100%;
+    opacity: 0.7;
+    /*Semi-transparente*/
+}
+
+.contenedor_imagenes {
+    /*Contenedor para la galería de imágenes del HOME*/
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contenedor_fig {
+    /*Figure contenedor de las imágenes de anterior y sig del HOME*/
+    width: 10%;
+}
+
+.contenedor {
+    /*Gran contenedor para los forms de cada página*/
+    width: 70%;
+    padding: 30px;
+    background: #2e3f4f;
+    margin: auto;
+    margin-top: 1%;
+    margin-bottom: 5%;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+
+}
+
+/*contenido es un gran contenedor para todo el contenido de cada página*/
+.contenido#tipos {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.galeria {
+    /*Section del HOME para la galeria de imágenes de vista desktop*/
+    display: none;
+}
+
+figure.contenedor_fig .anterior:hover,
+/*Hover para anterior y sig de la galeria de imágenes del HOME*/
+figure.contenedor_fig .siguiente:hover {
+    opacity: 1;
+    /*Sacarle lo transparente*/
+    width: 110%;
+    cursor: pointer;
+    /*cursor tipo mano*/
+}
+
+.recuadros {
+    /*Artículo del HOME y DESTINOS*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /*Alinear horizontalmente*/
+    margin-bottom: 1%;
+    margin-top: 1%;
+}
+
+.recuadro {
+    /*Section de un recuadro con una imagen y un párrafo del HOME y DESTINOS*/
+    margin: 3%;
+    background-color: #6b9991;
+    border: 3px solid #0083398a;
+    box-shadow: 7px 13px 37px #000;
+    border-radius: 7px;
+}
+
+.foto_menu {
+    /*Fotos de los recuadros del HOME y DESTINOS*/
+    width: 100%;
+}
+
+input {
+    /*Inputs de las páginas ADMINISTRADOR, CONTACTO y TURNOS*/
+    width: 100%;
+    color: black;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    border-radius: 5px;
+    font-size: small;
+}
+
+button {
+    /*Buttons de las páginas ADMINISTRADOR,CONTACTO, OFERTA y TURNOS*/
+    background-color: #357c72;
+    margin: 2%;
+    border-radius: 10px;
+    font-size: x-large;
+    width: 40%;
+    color: white;
+    border-color: white;
+}
+
+button#paginado_anterior,
+/*Botones de anterior y siguiente para el paginado*/
+button#paginado_siguiente,
+button#pag_siguiente,
+button#pag_anterior {
+    /*de las páginas OFERTAS y ADMINISTRADOR*/
+
+    width: auto;
+    font-size: small;
+}
+button#paginado_anterior:hover,
+/*Botones de anterior y siguiente para el paginado*/
+button#paginado_siguiente:hover,
+button#pag_siguiente:hover,
+button#pag_anterior:hover{
+    cursor: pointer;
+    background-color: #193e39;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 5s;
+}
+
+.ocultar {
+    display: none;
+}
+
+
+
+form#ant_sig,
+form#anter_sig {
+    /*Formulario que contiene los botones del paginado de las páginas OFERTAS y ADMINISTRADOR*/
+    display: flex;
+    justify-content: center;
+}
+
+label#Mensajes {
+    /*Label para decir si el captcha está correcto de la pagina TURNOS*/
+    text-align: center;
+    margin: 0;
+}
+
+select {
+    /*Selects de los forms, en las páginas de ADMINISTRADOR, OFERTAS y TURNOS*/
+    color: white;
+    background-color: #2f6b63;
+    border-radius: 5px;
+    font-size: small;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    display: flex;
+    width: 100%;
+}
+
+input[type="radio" i] {
+    /*Inputs de tipo radio para el transporte de la página TURNOS*/
+    width: 5%;
+    margin: 0;
+}
+.radio{
+    width: 80%;
+}
+
+label {
+    /*Labels para todos los formularios en las páginas de TURNOS, ADMINISTRADOR y OFERTAS*/
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    user-select: none;
+}
+
+#captcha_origen {
+    /*Label donde se muestra el captcha de la página TURNOS*/
+    background-color: #00192a;
+    border-radius: 10px;
+    font-size: xx-large;
+    border: #424242 1px solid;
+    box-shadow: 7px 13px 37px #000;
+    width: 100%;
+    text-align: center;
+    font-family: MAROLA;
+}
+
+.contenedor_captcha {
+    /*Seccion del codigo captcha de la página TURNOS*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor_opcion {
+    /*Contenedor para cada radio*/
+    display: flex;
+}
+
+.alquiler_auto,
+/*Labels de los radio*/
+.colectivo,
+.otro {
+    font-weight: normal;
+    margin-left: 0;
+}
+
+
+
+table,
+/*Tablas y campos*/
+td,
+tr,
+th {
+    border: 3px solid #102f1d8a;
+    border-collapse: collapse;
+}
+
+.tabla {
+    /*Artículos que contienen las tablas*/
+    display: flex;
+    justify-content: center;
+    margin: 2%;
+    width: 100%;
+}
+
+table {
+    /*Tablas*/
+    width: 95%;
+    box-shadow: 7px 13px 37px #000;
+    /*Sombra a la tabla*/
+}
+
+thead {
+    /*Encabezados de las tablas*/
+    background-color: #6b9991;
+}
+
+tbody {
+    /*Cuerpo de las tablas*/
+    background-color: #45726a;
+}
+
+.blanco {
+    /*h4 para la tabla de TIPOS DE VIAJES*/
+    color: white;
+    font-size: 10px;
+    -webkit-text-stroke: 0.3px black;
+    text-align: center;
+}
+
+.tipo {
+    /*thead de la tabla de TIPOS DE VIAJES*/
+    width: 25%;
+}
+
+.epoca,
+.destinos {
+    /*Thead de la tabla de TIPOS DE VIAJES*/
+    width: 15%;
+}
+
+td.sol_y_playa {
+    /*Td sol y playa de la página de TIPOS DE VIAJES*/
+    background-image: url(../images/www.elboletin.com_fotos_1_111634_playa-vacaciones-verano-2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: black;
+    font-size: 15px;
+    width: 50%;
+    text-align: center;
+}
+
+td.gastronomico {
+    /*Td gastronómico de la página de TIPOS DE VIAJES*/
+    background-image: url(../images/Gastronomia-Turismo\ .jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-size: 25px;
+}
+
+td ul {
+    /*Para las listas de destinos de la tabla de TIPOS DE VIAJES*/
+    text-align: left;
+}
+
+td {
+    /*td de todas las tablas*/
+    padding: 1%;
+    text-align: justify;
+}
+
+td h4 {
+    /*Todos los h4 que sean hijos de td*/
+    color: black;
+    font-size: 10px;
+    -webkit-text-stroke: 0.3px white;
+    text-align: center;
+}
+
+td.rural {
+    /*Td rural de la página de TIPOS DE VIAJES*/
+    background-image: url(../images/61f7e46d7cba2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-size: 25px;
+}
+
+td.naturaleza {
+    /*Td naturaleza de la página de TIPOS DE VIAJES*/
+    background-image: url(../images/turismonaturaleza.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-size: 25px;
+    color: black;
+}
+
+td.cultural {
+    /*Td cultural de la página de TIPOS DE VIAJES*/
+    background-image: url(../images/Turismo-Cultural.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-size: 25px;
+}
+
+td.familiar {
+    /*Td familiar de la página de TIPOS DE VIAJES*/
+    background-image: url(../images/destinos-para-visitar-en-familia.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-size: 25px;
+    color: black;
+}
+
+td.texto {
+    /*Descripcion de los TIPOS DE TURISMO*/
+    margin: 5% 2%;
+    display: flex;
+    border: 0;
+    text-align: justify;
+    font-size: 7px;
+}
+
+#destinos {
+    /*Columna de destinos de la tabla de TIPOS DE VIAJES*/
+    display: none;
+}
+
+#epoca {
+    /*Columna de epoca de la tabla de TIPOS DE VIAJES*/
+    display: none;
+}
+
+.resumir {
+    /*Span para achicar la descripcion en la vista de mobile*/
+    display: none;
+}
+
+#form_cargar_datos {
+    /*Formulario de ADMINISTRADOR y CONTACTO*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#form_cargar_datos #botonEnviar {
+    /*Botón enviar del formulario de ADMINISTRADOR y CONTACTO*/
+    font-size: medium;
+    width: 100%;
+}
+
+#form_cargar_datos #botonGuardar {
+    /*Botón para guardar después de editar*/
+    font-size: medium;
+    width: 50%;
+}
+
+table#ofertas td {
+    /*Todos los td que estén dentro de la tabla con id Ofertas*/
+    text-align: center;
+    font-size: 7px;
+    width: 20%;
+}
+
+.botones {
+    /*Div con los botones de eliminar y crear de a 3 de la página de administrador*/
+    display: flex;
+    width: 100%;
+}
+
+#boton_eliminar,
+/*Botones de la página de ADMINISTRADOR*/
+#boton_crear_de_a_tres {
+    font-size: medium;
+    width: 50%;
+    margin: 1px;
+}
+
+#boton_eliminar:hover,
+/*Hover de todos los botones*/
+#boton_crear_de_a_tres:hover,
+#botonEnviar:hover,
+#botonGuardar:hover {
+    cursor: pointer;
+    /*Cursor tipo mano*/
+    background-color: #193e39;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 5s;
+
+}
+
+#botonEnviar.hide {
+    /*Para la página de ADMINISTRADOR*/
+    display: none;
+}
+
+#botonEnviar.show {
+    /*Para la página de ADMINISTRADOR*/
+    display: block;
+}
+
+#botonGuardar {
+    /*Para la página de ADMINISTRADOR*/
+    display: none;
+}
+
+#botonGuardar.show {
+    /*Para la página de ADMINISTRADOR*/
+    display: block;
+}
+
+#botonGuardar.hide {
+    /*Para la página de ADMINISTRADOR*/
+    display: none;
+}
+
+#anter_sig.hide {
+    display: none;
+}
+
+#ant_sig.hide {
+    display: none;
+}
+
+#anter_sig.show {
+    display: flex;
+}
+
+#ant_sig.show {
+    display: flex;
+}
+
+#pag_anterior.hide {
+    display: none;
+}
+
+#pag_anterior.show {
+    display: block;
+}
+
+#pag_siguiente.hide {
+    display: none;
+}
+
+#pag_siguiente.show {
+    display: block;
+}
+
+#boton_crear_de_a_tres.hide {
+    display: none;
+}
+
+#boton_eliminar.hide {
+    display: none;
+}
+
+#boton_crear_de_a_tres.show {
+    display: block;
+}
+
+#boton_eliminar.show {
+    display: block;
+}
+
+.contenedor_tabla_form {
+    /* Contenedor de la tabla y el form de modificar de la página ADMINISTRADOR */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#filtro {
+    /* Páginas OFERTAS y ADMINISTRADOR */
+    width: 50%;
+    margin-top: 2%;
+    margin-right: 2%;
+}
+
+#form_filtro {
+    display: flex;
+    justify-content: end;
+}
+
+#form_filtro label {
+    margin: 2%;
+}
+
+textarea {
+    /* Para la página de ADMINISTRADOR y CONTACTO */
+    width: 100%;
+    color: black;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    border-radius: 5px;
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 90px;
+}
+
+td button {
+    /* Todos los botones que estén dentro de una celda, para la página de ADMINISTRADOR */
+    font-size: x-small;
+    width: 80%;
+}
+
+.columna_mostrar {
+    display: none;
+}
+
+.columna_mostrar.show {
+    display: revert;
+    /* "restablece" una propiedad a su valor heredado*/
+    padding: 0%;
+}
+
+.imagen_borrar {
+    /* Imagen con el logo de borrar para la página de administrador */
+    width: 25px;
+}
+
+.imagen_texto {
+    /* Secciones de la página NOSOTROS */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+figure.agencia_de_viajes,
+figure.atencion_arriba,
+figure.vision,
+figure.mision_arriba {
+    /*figures contenedores de la imágenes de la página NOSOTROS*/
+    width: 90%;
+}
+
+figure.atencion_abajo {
+    /*figures contenedores de la imágenes de la página NOSOTROS*/
+    display: none;
+}
+
+figure.mision_abajo {
+    /*figures contenedores de la imágenes de la página NOSOTROS*/
+    display: none;
+}
+
+figure img.img_agencia,
+figure img.img_atencion,
+figure img.img_vision,
+figure img.img_mision {
+    /*imágenes de la página NOSOTROS*/
+    width: 100%;
+    border-radius: 50%;
+}
+
+.ubicacion {
+    /* Sección para el maps de la página CONTACTO */
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+}
+
+#map {
+    /* Div contenedor del mapa de la página CONTACTO */
+    height: 200px;
+    width: 95%;
+}
+
+.contenedor_redes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+a {
+    color: white;
+}
+
+.redes_sociales {
+    /* Secciones de cada red social de la página CONTACTO */
+    display: flex;
+    margin: 2%;
+    width: 57%;
+    justify-content: left;
+}
+
+p.red {
+    /* Texto para cada red social de la página CONTACTO */
+    margin: 0;
+    width: auto;
+}
+
+.red_social {
+    /* Imágenes de cada red social de la página CONTACTO */
+    width: 20px;
+    margin-right: 2%;
+}
+
+.red_social#gmail {
+    height: 25px;
+    width: 20px;
+
+}
+
+.pintar {
+    /* Para pintar los precios según una condición del js de las páginas OFERTAS Y ADMINISTRADOR */
+    background-color: #2f5850;
+}
+
+/*---------------------------------------------------------------------
+-------------------------PIÉ DE PÁGINA---------------------------------
+---------------------------------------------------------------------*/
+footer {
+    background-color: rgb(21, 14, 55);
+}
+
+.redes {
+    /* Div para las imágenes del footer */
+    display: flex;
+    justify-content: center;
+    /*Alinear horizontalmente*/
+    border-top: 5px solid #22777b;
+}
+
+.red {
+    /*Imágenes de redes del footer*/
+    width: 15%;
+}
+
+.copyright {
+    /*Div del footer para el copyright*/
+    display: flex;
+    justify-content: center;
+    /*Alinear horizontalmente*/
+    background-color: rgb(16, 11, 42);
+}
+
+
+.btn_borrar_de_a_uno:hover,
+.btn_editar_de_a_uno:hover {
+    cursor: pointer;
+}
+
+
+/*|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|*/
+/*|                  CELULAR                 |*/
+/*|                 MÁS GRANDE/              |*/
+/*|                   TABLET                 |*/
+/*|__________________________________________|*/
+@media screen and (min-width: 480px) {
+
+    /*---------------------------------------------------------------------
+    ---------------------------ENCABEZADO----------------------------------
+    ---------------------------------------------------------------------*/
+    h1 {
+        font-size: xx-large;
+    }
+
+    span.slogan {
+        font-size: 15px;
+    }
+
+    .logotipo {
+        height: 70%;
+    }
+
+    header {
+        height: 100px;
+    }
+
+    /*---------------------------------------------------------------------
+    ----------------------------CONTENIDO----------------------------------
+    ---------------------------------------------------------------------*/
+    button#paginado_anterior,
+    /*Botones de anterior y siguiente para el paginado*/
+    button#paginado_siguiente {
+        /* de las páginas de OFERTAS y ADMINISTRADOR */
+        font-size: medium;
+    }
+
+    .contenedor_opcion {
+        /* Contenedor de los radio de la página TURNOS */
+        margin-left: 5%;
+    }
+
+    #captcha_origen {
+        /*Contenedor donde se muestra el código captcha de la página TURNOS*/
+        width: 90%;
+    }
+
+    td.texto {
+        /* Descripción de los TIPOS DE VIAJES */
+        font-size: 10px;
+    }
+
+    textarea {
+        /*Para las páginas de ADMINISTRADOR y CONTACTO*/
+        height: 120px;
+    }
+
+    #ofertas td {
+        /*Todas las celdas de la tabla con id OFERTAS*/
+        font-size: 10px;
+    }
+
+    #filtro {
+        /* Select de las páginas OFERTAS y ADMINISTRADOR */
+        width: 40%;
+    }
+
+    .primer_imagen_de_fondo#nosotros {
+        /*Página NOSOTROS*/
+        height: 240px;
+    }
+
+    .primer_imagen_de_fondo#nosotros h2 {
+        /*Página NOSOTROS*/
+        color: white;
+    }
+
+    #map {
+        /*Div contenedor del maps*/
+        height: 250px;
+    }
+}
+
+/*|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|*/
+/*|                                          |*/
+/*|                  TABLET                  |*/
+/*|                                          |*/
+/*|__________________________________________|*/
+@media screen and (min-width: 580px) {
+
+    /*---------------------------------------------------------------------
+    ---------------------------ENCABEZADO----------------------------------
+    ---------------------------------------------------------------------*/
+    span.slogan {
+        font-size: 15px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+
+    h5 {
+        font-size: x-small;
+    }
+
+    .logotipo {
+        height: 68%;
+    }
+
+    header {
+        height: 100px;
+    }
+
+
+
+    /*---------------------------------------------------------------------
+    ----------------------------CONTENIDO----------------------------------
+    ---------------------------------------------------------------------*/
+    .primer_imagen_de_fondo {
+        /* Páginas ADMINISTRADOR, HOME, NOSOTROS, OFERTAS */
+        height: 280px;
+    }
+
+    .primer_imagen_de_fondo#nosotros {
+        /*Página de NOSOTROS*/
+        height: 250px;
+    }
+
+    .primer_imagen_de_fondo#ofer {
+        /*Página de OFERTAS*/
+        height: 300px;
+    }
+
+    .titulo_corto {
+        /* h3 del HOME */
+        font-size: 27px;
+    }
+
+    .titulo_largo {
+        /* h3 del HOME */
+        font-size: 22px;
+        text-align: center;
+    }
+
+    label {
+        /*Todos los labels*/
+        font-size: 20px;
+    }
+
+    input {
+        /* Todos los inputs */
+        height: 25px;
+    }
+
+    select {
+        /* Todos los selects */
+        height: 25px;
+    }
+
+    td h4 {
+        /*Los h4 dentro de una celda*/
+        font-size: 20px;
+    }
+    table#ofertas td {
+        font-size: 10px;
+    }
+
+    h4.blanco {
+        /*h4 con clase blanco para la página de TIPOS DE VIAJES*/
+        font-size: 20px;
+    }
+
+    #captcha_origen {
+        /*Contenedor donde se muestra el código captcha de la página TURNOS*/
+        width: 100%;
+    }
+
+    #form_cargar_datos #botonEnviar {
+        /*Páginas CONTACTO y ADMINISTRADOR*/
+        width: 50%;
+    }
+
+    #filtro {
+        margin-right: 3%;
+    }
+
+    .botones {
+        /*Botones de la página ADMINISTRADOR*/
+        justify-content: center;
+    }
+
+    #boton_eliminar,
+    #boton_crear_de_a_tres {
+        /* Botones de ADMINISTRADOR */
+        width: 25%;
+    }
+
+    td button {
+        /* Botones dentro de una celda */
+        width: 60%;
+    }
+
+    /*---------------------------------------------------------------------
+    -------------------------PIÉ DE PÁGINA---------------------------------
+    ---------------------------------------------------------------------*/
+    .red {
+        /*Foto de las redes del footer*/
+        width: 20%;
+    }
+}
+
+
+/*|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|*/
+/*|                    TABLET                |*/
+/*|                     MÁS                  |*/
+/*|                    GRANDE                |*/
+/*|__________________________________________|*/
+@media screen and (min-width: 700px) {
+
+    /*---------------------------------------------------------------------
+    ---------------------------ENCABEZADO----------------------------------
+    ---------------------------------------------------------------------*/
+    header {
+        height: 120px;
+    }
+
+    .btn_menu a {
+        font-size: 15px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    /*---------------------------------------------------------------------
+    ----------------------------CONTENIDO----------------------------------
+    ---------------------------------------------------------------------*/
+    .primer_imagen_de_fondo {
+        /* De las páginas ADMINISTRADOR, HOME, NOSOTROS y OFERTAS */
+        height: 340px;
+    }
+
+    .primer_imagen_de_fondo#nosotros {
+        /* De la página NOSOTROS */
+        height: 300px;
+    }
+
+    .primer_imagen_de_fondo#administrador {
+        /* De la página ADMINISTRADOR */
+        height: 300px;
+    }
+
+    .primer_imagen_de_fondo#contactos {
+        /*Página CONTACTO*/
+        height: 340px;
+    }
+
+    .recuadros {
+        /* De las páginas HOME Y DESTINOS */
+        margin: 0;
+    }
+
+    .titulo_corto {
+        /* H3 del HOME */
+        font-size: 35px;
+    }
+
+    .titulo_largo {
+        /* H3 del HOME */
+        font-size: 28px;
+    }
+
+    #captcha_origen {
+        /* Contenedor del código captcha de la página TURNOS */
+        font-size: 40px;
+        padding: 15px;
+        width: 95%;
+    }
+
+    label {
+        /* Todos los labels */
+        text-align: left;
+    }
+
+    #destinos {
+        /* Columna de la tabla de TIPOS DE VIAJES */
+        display: revert;
+        /* "restablece" una propiedad a su valor heredado*/
+    }
+
+    .sol_y_playa {
+        /* TIPOS DE TURISMO */
+        width: 40%;
+    }
+
+    #ofertas {
+        /* tabla de las páginas ADMINISTRADOR Y OFERTAS */
+        width: 90%;
+        height: max-content;
+    }
+
+    #ofertas td {
+        /* Celdas de las páginas de ADMINISTRADOR y OFERTAS */
+        width: 20%;
+    }
+
+    #ofertas th {
+        /* Encabezado de la tabla de las páginas de ADMINISTRADOR y OFERTAS */
+        width: 20%;
+    }
+
+    #filtro {
+        margin-top: 3%;
+        margin-right: 5%;
+    }
+
+    #form_filtro label {
+        margin-top: 3%;
+    }
+
+    .imagen_texto {
+        /* De la página de NOSOTROS */
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    figure.agencia_de_viajes,
+    figure.atencion_abajo,
+    figure.vision,
+    figure.mision_abajo {
+        /* De la página de NOSOTROS */
+        width: 40%;
+    }
+
+    figure.atencion_abajo {
+        /* De la página de NOSOTROS */
+        display: block;
+    }
+
+    figure.mision_abajo {
+        /* De la página de NOSOTROS */
+        display: block;
+    }
+
+    figure.atencion_arriba {
+        /* De la página de NOSOTROS */
+        display: none;
+    }
+
+    figure.mision_arriba {
+        /* De la página de NOSOTROS */
+        display: none;
+    }
+
+    figure img.img_agencia,
+    figure img.img_atencion,
+    figure img.img_visionimg.img_mision {
+        /* De la página de NOSOTROS */
+        width: 100%;
+        border-radius: 50%;
+    }
+
+    .text_quienes_somos,
+    .text_atencion,
+    .text_vision,
+    .text_mision {
+        /* De la página de NOSOTROS */
+        width: 55%;
+    }
+
+}
+
+
+/*|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|*/
+/*|                                          |*/
+/*|                  NETBOOK                 |*/
+/*|                                          |*/
+/*|__________________________________________|*/
+@media screen and (min-width: 850px) {
+
+    /*---------------------------------------------------------------------
+    ----------------------------CONTENIDO----------------------------------
+    ---------------------------------------------------------------------*/
+
+    .recuadros {
+        /* De las páginas HOME y DESTINOS */
+        flex-direction: row;
+    }
+
+    .recuadro {
+        /* De las páginas HOME y DESTINOS */
+        width: 33%;
+        margin: 1%;
+    }
+
+    h5 {
+        font-size: small;
+    }
+
+    .primer_imagen_de_fondo#administrador {
+        /* De la página ADMINISTRADOR */
+        height: 340px;
+    }
+
+    .primer_imagen_de_fondo#ofer {
+        /*Página de OFERTAS*/
+        height: 330px;
+    }
+
+    input {
+        /* De todos los inputs */
+        width: 80%;
+        font-size: x-large;
+        margin-left: 0px;
+    }
+    input[type="radio" i] {
+        /*Inputs de tipo radio para el transporte de la página TURNOS*/
+        width: 10%;
+    }
+    select {
+        /* De todos los Selects */
+        font-size: x-large;
+        width: 81%;
+        height: 40px;
+    }
+
+    textarea {
+        /* Para las páginas de CONTACTO y ADMINISTRADOR */
+        width: 80%;
+        font-size: x-large;
+    }
+
+    label {
+        /* Para todos los labels */
+        margin-left: 0px;
+    }
+
+    #input_destino,
+    #descripcion,
+    #precio,
+    #label_destino,
+    #label_descripcion,
+    #label_precio {
+        /* Para la página de ADMINISTRADOR */
+        margin-left: 0;
+    }
+
+    #filtro {
+        /* Páginas OFERTAS y ADMINISTRADOR */
+        font-size: medium;
+        height: auto;
+    }
+
+    #captcha_origen {
+        /* Donde se muestra el código captcha de la página TURNOS */
+        width: 80%;
+        margin-left: 0%;
+    }
+
+    td.texto {
+        /* Descripción de TIPOS DE VIAJES */
+        font-size: 15px;
+    }
+
+    td.sol_y_playa {
+        width: 40%;
+    }
+
+    table#ofertas td {
+        font-size: 13px;
+    }
+    .contenedor_opcion {
+        /* Contenedor de los RADIO */
+        margin-left: 0px;
+    }
+
+    .contenedor#contacto {
+        /*Pagina CONTACTO*/
+        width: 40%;
+        margin: 3%;
+    }
+
+    .contenedor_redes {
+        /* Página CONTACTO */
+        width: 50%;
+        justify-content: start;
+        margin-top: 2%;
+    }
+
+    .gran_container {
+        /* Página CONTACTO */
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .datos_form {
+        /* Sections de la página CONTACTO */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #captcha {
+        /* Input para ingresar el CAPTCHA */
+        margin-left: 0px;
+        ;
+    }
+
+    /*---------------------------------------------------------------------
+    -------------------------PIÉ DE PÁGINA---------------------------------
+    ---------------------------------------------------------------------*/
+    .red {
+        /* Fotos de red para el footer */
+        width: 15%;
+    }
+
+}
+
+/*|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|*/
+/*|                                          |*/
+/*|                 NETEBOOK                 |*/
+/*|                  GRANDE                  |*/
+/*|__________________________________________|*/
+@media screen and (min-width: 920px) {
+
+    /*---------------------------------------------------------------------
+    ----------------------------CONTENIDO----------------------------------
+    ---------------------------------------------------------------------*/
+    .primer_imagen_de_fondo {
+        /* Páginas ADMINISTRADOR, HOME, NOSOTROS, OFERTA */
+        height: 400px;
+    }
+
+    .primer_imagen_de_fondo#nosotros {
+        /* Página NOSOTROS */
+        height: 350px;
+    }
+
+    .primer_imagen_de_fondo#administrador {
+        /* De la página ADMINISTRADOR */
+        height: 350px;
+    }
+
+}
+
+
+/*|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|*/
+/*|                                          |*/
+/*|                 NOTEBOOK                 |*/
+/*|                   CHICA                  |*/
+/*|__________________________________________|*/
+@media screen and (min-width: 1100px) {
+
+    /*---------------------------------------------------------------------
+    ---------------------------ENCABEZADO----------------------------------
+    ---------------------------------------------------------------------*/
+    h1 {
+        font-size: 50px;
+    }
+
+    .titulo_corto {
+        /* h3 del HOME */
+        font-size: 40px;
+    }
+
+    .titulo_largo {
+        /* h3 del HOME */
+        font-size: 35px;
+    }
+
+    ul.navigation li {
+        font-size: 11px;
+    }
+
+    /* En desktop ocultamos siempre el boton del menu */
+    .btn_menu {
+        display: none;
+    }
+
+    .btn_menu a {
+        font-size: 20px;
+    }
+
+    .menu_desplegable {
+        display: none;
+    }
+
+    /* Cambiamos la direccion del flex */
+    ul.navigation {
+        display: flex;
+        flex-direction: row;
+        background: black;
+        border-bottom: 5px solid #6ca9d3;
+        padding-left: 0;
+        margin: 0px;
+        justify-content: space-between;
+    }
+
+    li.slogan {
+        display: flex;
+        list-style: none;
+        padding: 17px;
+        text-transform: uppercase;
+        background-color: #00192a;
+
+    }
+
+    ul.navigation li {
+        font-size: 10px;
+        padding: 10px 15px;
+    }
+
+    span.slogan {
+        display: none;
+    }
+
+    /*---------------------------------------------------------------------
+    ----------------------------CONTENIDO----------------------------------
+    ---------------------------------------------------------------------*/
+    .primer_imagen_de_fondo {
+        /* Páginas HOME, ADMINISTRADOR, NOSOTROS, OFERTAS */
+        height: 460px;
+    }
+
+    .primer_imagen_de_fondo#nosotros {
+        /* PÁGINA NOSOTROS */
+        height: 400px;
+    }
+
+    .primer_imagen_de_fondo#contactos {
+        /*Página CONTACTO*/
+        height: 350px;
+    }
+
+    .primer_imagen_de_fondo#administrador {
+        /* De la página ADMINISTRADOR */
+        height: 420px;
+    }
+
+    .primer_imagen_de_fondo#ofer {
+        /*Página de OFERTAS*/
+        height: 370px;
+    }
+
+    .siguiente,
+    .anterior {
+        /* Anterior y siguiente para la galería de imágenes del HOME */
+        width: 70%;
+    }
+
+    .image {
+        /* Figure contenedor para la galería de imágenes del HOME */
+        width: 75%;
+    }
+
+    table #epoca {
+        /* TIPOS DE VIAJES */
+        display: revert;
+        /*"restablece" una propiedad a su valor heredado*/
+        width: 16%;
+    }
+
+    td.sol_y_playa {
+        width: 35%;
+    }
+
+
+    .logo_nav {
+        width: 15px;
+    }
+
+    #filtro {
+        /* Páginas ADMINISTRADOR y OFERTAS */
+        width: 30%;
+    }
+
+    /*---------------------------------------------------------------------
+    -------------------------PIÉ DE PÁGINA---------------------------------
+    ---------------------------------------------------------------------*/
+    .red {
+        /* Imágenes de redes del footer */
+        width: 10%;
+    }
+}
+
+/*|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|*/
+/*|                                          |*/
+/*|                  DESKTOP                 |*/
+/*|                                          |*/
+/*|__________________________________________|*/
+@media screen and (min-width: 1300px) {
+
+    /*---------------------------------------------------------------------
+    ---------------------------ENCABEZADO----------------------------------
+    ---------------------------------------------------------------------*/
+    h1 {
+        font-size: xxx-large;
+    }
+
+    h2 {
+        font-size: 60px;
+    }
+
+    .titulo_corto {
+        /* h3 del HOME */
+        font-size: 52px;
+        margin: 0.5%;
+    }
+
+    .titulo_largo {
+        /* h3 del HOME */
+        font-size: 39px;
+        margin: 0.5%;
+    }
+
+    h4 {
+        font-size: 30px;
+    }
+
+    h5 {
+        margin: 1px;
+        font-size: small;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    .logotipo {
+        /* Imagen del logo del INDEX */
+        height: 70%;
+    }
+
+    header {
+        width: 100%;
+        height: 150px;
+    }
+
+    ul.navigation li {
+        font-size: 14px;
+    }
+
+    /*---------------------------------------------------------------------
+    ----------------------------CONTENIDO---------------------------------
+    ---------------------------------------------------------------------*/
+    .contenido {
+        width: 100%;
+        height: 100%;
+    }
+
+    .primer_imagen_de_fondo {
+        /* Páginas ADMINISTRADOR, HOME, NOSOTROS Y OFERTAS */
+        height: 700px;
+    }
+
+    .primer_imagen_de_fondo#nosotros {
+        /* Página NOSOTROS */
+        height: 500px;
+    }
+
+    .primer_imagen_de_fondo#contactos {
+        /*Página CONTACTO*/
+        height: 400px;
+    }
+
+    .primer_imagen_de_fondo#administrador {
+        /* De la página ADMINISTRADOR */
+        height: 450px;
+    }
+
+    .primer_imagen_de_fondo#ofer {
+        /*Página de OFERTAS*/
+        height: 450px;
+    }
+
+    .contenedor_imagenes {
+        /* Contenedor de la galería */
+        display: none;
+    }
+
+    .galeria {
+        /* Galeria de vista desktop */
+        display: flex;
+        justify-content: center;
+        /*Alinear horizontalmente*/
+    }
+
+    .imagenes {
+        /* Figures de la galería */
+        width: 15%;
+        margin: 0.5%;
+        overflow: hidden;
+        /* Oculta lo que se salga del contenedor */
+    }
+
+    .imagen {
+        /* Cada imagen de la galería */
+        width: 100%;
+    }
+
+    .imagen:hover {
+        width: 110%;
+        cursor: zoom-in;
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5);
+        /*cursor tipo lupa +*/
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1) 2s;
+        /*transicion para agrandar las imagenes*/
+    }
+
+    .recuadros {
+        /* Del HOME y DESTINOS */
+        flex-direction: row;
+    }
+
+    .recuadro {
+        /* Del HOME y DESTINOS */
+        width: 33%;
+    }
+
+    button {
+        /* Todos los botones */
+        margin-top: 0%;
+    }
+
+    #captcha {
+        /*  Input para el captcha */
+        width: 60%;
+    }
+
+    #captcha_origen {
+        /* Donde se muestra el código captcha de la página TURNOS */
+        width: 57%;
+    }
+
+    td button {
+        /* Botones hijos de una celda */
+        width: 40%;
+        margin: 2%;
+    }
+    td.sol_y_playa {
+        width: 30%;
+    }
+
+    /*---------------------------------------------------------------------
+    -------------------------PIÉ DE PÁGINA--------------------------------
+    ---------------------------------------------------------------------*/
+    .red {
+        /* Redes del footer */
+        width: 8%;
+    }
+
+}
+
+/*|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|*/
+/*|                                          |*/
+/*|                  DESKTOP                 |*/
+/*|                  GRANDE                  |*/
+/*|__________________________________________|*/
+@media screen and (min-width: 1400px) {
+
+    /*---------------------------------------------------------------------
+    ----------------------------ENCABEZADO---------------------------------
+    ---------------------------------------------------------------------*/
+    ul.navigation li {
+        font-size: 15px;
+    }
+
+    /*---------------------------------------------------------------------
+    ----------------------------CONTENIDO---------------------------------
+    ---------------------------------------------------------------------*/
+    .primer_imagen_de_fondo#contactos {
+        /*Página CONTACTO*/
+        height: 480px;
+    }
+
+    .primer_imagen_de_fondo#ofer {
+        /*Página de OFERTAS*/
+        height: 500px;
+    }
+    td.sol_y_playa {
+        width: 25%;
+    }
+}
